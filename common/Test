@@ -1,0 +1,13 @@
+import turtle
+size=0.3
+size_multiplier = 25.0
+window=turtle.Screen()
+window.bgcolor('white')
+mid_point=turtle.Turtle('cirlce')
+mid_point.color('black')
+mid_point.resizemode('user')
+mid_point.shapesize(size,size,size)
+mid_point.hideturtle()
+mid_point.goto(0*size_multiplier,0*size_multiplier)
+mid_point.stamp()
+turtle.done()
