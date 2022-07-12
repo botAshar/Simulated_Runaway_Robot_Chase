@@ -567,7 +567,7 @@ target = robot(0.0, 10.0, 0.0, 2*pi / 30, 1.5)
 measurement_noise = 0.1 * target.distance
 target.set_noise(0.0, 0.0, measurement_noise)
 #measuring_tol = 1.3 * max([measurement_noise,target.distance])/min([measurement_noise,target.distance])
-measuring_tol = 1.8
+measuring_tol = 4.0
 hunter = robot(-10.0, -10.0, 0.0)
 
 demo_grading(hunter, target, next_move)
