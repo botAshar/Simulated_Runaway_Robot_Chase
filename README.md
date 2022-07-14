@@ -6,7 +6,8 @@ in Udacity.
 
 ## LOCALIZATION:
     - I have used several different types of partictle filters to try to localize the robot in **Part 2** with noise and the localization of the robot has worked localizing the robot successfully several times even when the noise is equal to the speed/distance traveled by the robot.
-    - The **Circle measurement on P_filter.py** code uses the typical particle but the measurements recieved from the robot are transformed on estimated circumferance of the circle that the robot is moving on.
+    - The **Circle measurement on P_filter.py** code uses the typical particle but the measurements recieved
+     from the robot are transformed on estimated circumferance of the circle that the robot is moving on.
     - The **Particle filter change.py** code uses a amended form of particle filter in which the measurement probability for resampling the particles now includes the factor of how close the robot is on the circle, this results in major error reduction in the estimation of robot position.
     - Finally **Non_random_particle_filer apply.py** code uses another amended form of particle filter which basically uses the noisy circularly transformed measurements to create the all the particles instead of using a random set of particles and it recreates n particles using n noisy measurement after n/4 interval. The rest of particle filter code is typical. This results in much less mean error than the previous techniques.
 
