@@ -14,3 +14,4 @@ HUNTING OF ROBOT:
     Finally, the **Part 4** and **part 5** are the similar, the only difference being the large noise of 200%. So I have used the  **Non_random_particle_filer** and the hunting of the robot is successful for the noise levels up to 50% of the speed/distance traveled by the robot, beyond that the hunter robot fails to consistently catch the target.
 
     The algorithm used for hunting the robot basically follows the predicted robot positions untils it's too far away from the next prediction, it then predicts the position of the robot in advance using the circular path and the edge length the of the n_gon(33 to 34 sides in this case) and moves straight towards it at the maximum allowable speed. Just two steps before reaching cirular predicted measurements, the hunter robot now starts follow the particle filter predicted positions to catch the robot.
+
